@@ -1,7 +1,7 @@
 import { BookOpen } from 'lucide-react'
 import { findNavLabels } from '../data/navigation'
 
-const GITHUB_URL = 'https://github.com/MadSadly/4project'
+const GITHUB_URL = 'https://github.com/BWJ6814/SafetyGuard'
 
 function GitHubIcon({ className }: { className?: string }) {
   return (
@@ -73,7 +73,7 @@ export function DocHeader({
           <div className="min-w-0 flex-1">
             {isIntro ? (
               <h1 className="text-left text-sm font-semibold tracking-tight text-slate-900 sm:text-base">
-                MedNeuro 포트폴리오
+                SafeGuard 포트폴리오
               </h1>
             ) : (
               <h1 className="flex min-w-0 flex-wrap items-baseline gap-x-2 gap-y-1 text-left text-lg font-bold leading-snug sm:text-xl">
@@ -97,8 +97,8 @@ export function DocHeader({
           target="_blank"
           rel="noopener noreferrer"
           className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-slate-200 bg-white text-slate-800 shadow-sm transition-colors hover:border-slate-300 hover:bg-slate-50"
-          aria-label="GitHub — MedNeuro 저장소(4project)"
-          title="github.com/MadSadly/4project"
+          aria-label="GitHub — SafetyGuard 저장소"
+          title="github.com/BWJ6814/SafetyGuard"
         >
           <GitHubIcon className="h-5 w-5" />
         </a>

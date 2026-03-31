@@ -1,14 +1,6 @@
 import type { ReactNode } from 'react'
-import {
-  RequirementsArticle,
-  UseCaseArticle,
-  UserFlowArticle,
-} from '../content/analysisArticles'
-import {
-  DbErdArticle,
-  ScreenDesign2dArticle,
-  ScreenDesignUploadArticle,
-} from '../content/designArticles'
+import { RequirementsArticle } from '../content/analysisArticles'
+import { DbErdArticle } from '../content/designArticles'
 import { MainScreensArticle } from './doc/MainScreensArticle'
 import { RiskManagementArticle } from '../content/managementArticles'
 import {
@@ -16,7 +8,6 @@ import {
   ProjectBackgroundArticle,
   ProjectGoalsArticle,
   ScheduleArticle,
-  TeamRolesArticle,
 } from '../content/overviewArticles'
 import { LandingIntro } from './LandingIntro'
 import { NAV_CATEGORIES } from '../data/navigation'
@@ -38,13 +29,8 @@ const SECTION_BODIES: Record<string, ReactNode> = {
   'project-background': <ProjectBackgroundArticle />,
   'project-goals': <ProjectGoalsArticle />,
   architecture: <ArchitectureArticle />,
-  'team-roles': <TeamRolesArticle />,
   schedule: <ScheduleArticle />,
-  'user-flow': <UserFlowArticle />,
-  'use-case': <UseCaseArticle />,
   requirements: <RequirementsArticle />,
-  'screen-design-upload': <ScreenDesignUploadArticle />,
-  'screen-design-2d': <ScreenDesign2dArticle />,
   'db-erd': <DbErdArticle />,
   'main-screens': <MainScreensArticle />,
   'risk-management': <RiskManagementArticle />,
@@ -105,9 +91,8 @@ export function DocMain() {
                               교체해 주세요.
                             </p>
                             <p className="leading-relaxed">
-                              MedNeuro는 NIfTI 기반 뇌 영상 시각화에 특화된
-                              서비스로, 2D·3D 출력과 임상·연구 워크플로에 맞춘
-                              설계를 목표로 합니다.
+                              SafeGuard는 현장 안전장구 착용 모니터링과 로컬 LLM
+                              기반 분석을 목표로 합니다.
                             </p>
                           </div>
                           <PlaceholderFigure

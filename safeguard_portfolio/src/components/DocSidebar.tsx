@@ -115,7 +115,7 @@ export function DocSidebar({
             goIntro()
           }}
         >
-          MedNeuro
+          SafeGuard
         </a>
         <button
           type="button"

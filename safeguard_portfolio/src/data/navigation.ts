@@ -13,28 +13,19 @@ export const NAV_CATEGORIES: NavCategory[] = [
     children: [
       { id: 'project-background', label: '프로젝트 배경' },
       { id: 'project-goals', label: '프로젝트 목표' },
-      { id: 'architecture', label: '시스템 아키텍쳐' },
-      { id: 'team-roles', label: '팀원 역할 분배' },
+      { id: 'architecture', label: '시스템 구성도' },
       { id: 'schedule', label: '프로젝트 스케쥴' },
     ],
   },
   {
     id: 'analysis',
     label: '분석',
-    children: [
-      { id: 'user-flow', label: '서비스 이용 흐름' },
-      { id: 'use-case', label: '유스케이스' },
-      { id: 'requirements', label: '요구사항 정의서' },
-    ],
+    children: [{ id: 'requirements', label: '요구사항 정의서' }],
   },
   {
     id: 'design',
     label: '설계',
-    children: [
-      { id: 'screen-design-upload', label: '화면 설계서 (업로드)' },
-      { id: 'screen-design-2d', label: '화면 설계서 (2D 분석)' },
-      { id: 'db-erd', label: 'DB-ERD 설계서' },
-    ],
+    children: [{ id: 'db-erd', label: 'DB-ERD 설계서' }],
   },
   {
     id: 'implementation',
