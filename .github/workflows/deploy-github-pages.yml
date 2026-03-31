@@ -51,6 +51,10 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
+    # deploy 단계만 필요한 권한(일부 저장소는 job 단위 명시가 필요함)
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
